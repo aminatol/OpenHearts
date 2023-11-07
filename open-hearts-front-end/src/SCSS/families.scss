@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+/* This CSS was inspired by Brad Traversy 50 projects in 50 days */
+@import "variables";
+:root {
+  --primary-color: #5709ab;
+  --secondary-color: #a407a1;
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+.families-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* body {
+  background-color: var(--primary-color) ;
+  font-family: 'Poppins', sans-serif;
+   margin: 0;
+}  */
+
+.show-families {
+  & img {
+    width: 100%;
+  }
+  display: flex;
+  width: 300px;
+  margin: 1rem;
+  background-color: $primary-color;
+  box-shadow: $box-shadow;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  & :hover {
+    transform: translateY(0);
+  }
+}
+
+.family-info {
+  & a {
+    color: $color-pink;
+    text-decoration: none;
+  }
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.place-info h3 {
+  margin-top: 0;
+}
+
+.description-family {
+  li {
+    list-style-type: none;
+    align-items: right;
+  }
+  background-color: $color-white;
+  /* height: 30vh; */
+  padding: 2rem;
+  text-align: right;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+// .show-families:hover .description-family {
+//   transform: translateY(0);
+// }
+button {
+  /* background-color: var(--primary-color); */
+  color: $color-white;
+  background-color: $secondary-color;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  font-family: inherit;
+  font-size: double (16px);
+  font-weight: bolder;
+  border: 0;
+  border-radius: 5px;
+}
+
+button a {
+  color: $color-white;
+  text-decoration: none;
+}

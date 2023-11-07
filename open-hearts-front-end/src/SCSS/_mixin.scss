@@ -1,0 +1,16 @@
+@mixin text-decoration-none {
+  text-decoration: none;
+}
+@mixin form-postion {
+  position: relative;
+}
+
+@mixin border-boder-radius {
+  border: $family-border;
+  border-radius: 1%;
+}
+@mixin margin-func {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
